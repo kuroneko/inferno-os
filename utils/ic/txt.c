@@ -1,6 +1,6 @@
 #include "gc.h"
 
-static long ncast64[];
+static long ncast64[NTYPE];
 
 extern void ccmain(int, char**);
 
