@@ -11,10 +11,9 @@
 #include	<limits.h>
 #include	<errno.h>
 #include	<semaphore.h>
+#include	<sched.h>
 
 #ifdef __NetBSD__
-#include	<sched.h>
-#define pthread_yield() (sched_yield())
 #define PTHREAD_STACK_MIN ((size_t)sysconf(_SC_THREAD_STACK_MIN))
 #endif
 
@@ -216,9 +215,7 @@ kprocinit(Proc *p)
 void
 osyield(void)
 {
-//	pthread_yield_np();
-	/* define pthread_yield to be sched_yield or pthread_yield_np if required */
-	pthread_yield();
+	sched_yield();
 }
 
 void
