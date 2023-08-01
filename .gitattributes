@@ -1,0 +1,19 @@
+# most files in the repo must be LF endings for Inferno itself.
+*           text=auto eol=lf
+# C sources are host native and can have native line-ends
+*.c         text=auto -eol
+*.h         text=auto -eol
+# executables should be handled as binary.
+**/bin/**   -text
+*.exe       -text
+*.dis       -text
+# fonts, icons, bitmaps should be handled as binary.
+fonts/*/**    -text
+icons/**    -text
+*.bit       -text
+*.png       -text
+*.gif       -text
+*.jpg       -text
+*.jpeg      -text
+# codepage specifications are effectively binary.
+lib/convcs/**   -text
