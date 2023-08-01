@@ -54,7 +54,7 @@ static struct Cmd cmdmain[] =
 	"winfo",	tkwinfo,
 };
 
-char*	tkfont;
+extern char*	tkfont;
 
 /*
  * auto-repeating support

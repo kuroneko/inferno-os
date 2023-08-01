@@ -86,7 +86,8 @@ struct	Optab
 	char	size;
 	char	param;
 };
-struct
+
+EXTERN struct
 {
 	Optab*	start;
 	Optab*	stop;
