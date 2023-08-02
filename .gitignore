@@ -50,6 +50,7 @@ y.debug
 
 /emu/Nt/*.map
 /emu/Nt/*.exe
+/emu/Nt/ie.c
 
 # initial mk from makemk.sh
 /utils/mk/mk
