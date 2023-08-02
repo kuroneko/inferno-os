@@ -32,6 +32,7 @@ __declspec(thread)       Proc    *up;
 HANDLE	ntfd2h(int);
 int	nth2fd(HANDLE);
 char *hosttype = "Nt";
+void	(*coherence)(void) = nofence;
 
 static void
 pfree(Proc *p)
