@@ -34,7 +34,7 @@ canlock(Lock *l)
 void
 unlock(Lock *l)
 {
-	l->val = 0;
+	_atomic_clr(&l->val);
 }
 
 void

@@ -326,6 +326,7 @@ struct Lock {
 } Lock;
 
 extern int	_tas(int*);
+extern void	_atomic_clr(int*);
 
 extern	void	lock(Lock*);
 extern	void	unlock(Lock*);
