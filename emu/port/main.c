@@ -430,21 +430,6 @@ _assert(char *fmt)
 	panic("assert failed: %s", fmt);
 }
 
-/*
- * mainly for libmp
- */
-void
-sysfatal(char *fmt, ...)
-{
-	va_list arg;
-	char buf[64];
-
-	va_start(arg, fmt);
-	vsnprint(buf, sizeof(buf), fmt, arg);
-	va_end(arg);
-	error(buf);
-}
-
 void
 oserror(void)
 {
