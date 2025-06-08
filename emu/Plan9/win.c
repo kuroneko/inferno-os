@@ -52,6 +52,7 @@ static	int	dispbufsize;
 #define	NINFO	12*12
 #define	HDR		21
 
+char *gkscanid = "emu_plan9";
 
 void
 killrefresh(void)
